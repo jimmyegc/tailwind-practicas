@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="h-[300vh]">
+    <nav
+      class="bg-violet-600 h-20 px-8 flex text-white justify-between items-center"
+    >
+      <h1 class="text-3xl font-bold">Logo.</h1>
+      <div class="flex gap-8">
+        <a class="text-lg" href="#">Inicio</a>
+        <a class="text-lg" href="#">Acerca de </a>
+        <a class="text-lg" href="#">Contacto</a>
+      </div>
+    </nav>
+
+    <h2 class="text-3xl font-bold text-center my-12">Galería de imagenes</h2>
+    <section class="bg-red-200 w-[90%] mx-auto flex flex-wrap gap-x-8 gap-y-4">
+      <img
+        class="w-52 h-52 grow object-cover"
+        src="https://img.freepik.com/premium-photo/japan-anime-cosplay-portrait-girl-with-cyberpunk-costume-fashion-night-tokyo-light_161568-13565.jpg"
+      />
+      <img
+        class="w-52 h-52 grow object-cover"
+        src="https://images.unsplash.com/photo-1596187561426-20d165472a72?q=80&w=1336&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      />
+      <img
+        class="w-52 h-52 grow object-cover"
+        src="https://images.unsplash.com/photo-1662499837155-039f8ed9e643?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
+      />
+      <img
+        class="w-52 h-52 grow object-cover"
+        src="https://i0.wp.com/senpai.com.mx/wp-content/uploads/2021/07/Cosplay-de-anime-transforma-a-Deku-en-la-waifu-de-tus-suenos-3.jpg?resize=1280%2C1600&ssl=1"
+      />
+      <img
+        class="w-52 h-52 grow object-cover order-first"
+        src="https://image.cdn2.seaart.ai/2023-08-23/15120975837305861/1e1e5a965c3f3be23a17bf05e46881d30907db85_high.webp"
+      />
+      <img
+        class="w-52 h-52 grow object-cover"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeRptKSwwmdukdtG2x43WxuZySFfkg5OSEqr7RwjWp4A&s"
+      />
+    </section>
+
+    <hr />
+
+    <figure class="w-64 h-96 relative top-10 left-20">
+      <p
+        class="absolute inset-0 text-white bg-red-600/50 font-bold flex items-center justify-center text-3xl z-10"
+      >
+        Cosplayer
+      </p>
+      <img
+        class="w-full h-full object-cover z-20 scale-50 origin-bottom-right"
+        src="https://img.freepik.com/premium-photo/japan-anime-cosplay-portrait-girl-with-cyberpunk-costume-fashion-night-tokyo-light_161568-13565.jpg"
+      />
+    </figure>
+    <figure>
+      <img
+        class="w-52 h-52 grow object-cover rotate-45"
+        src="https://img.freepik.com/premium-photo/japan-anime-cosplay-portrait-girl-with-cyberpunk-costume-fashion-night-tokyo-light_161568-13565.jpg"
+      />
+    </figure>
+
+    <figure>
+      <img
+        class="w-52 h-52 grow object-cover translate-x-10"
+        src="https://images.unsplash.com/photo-1662499837155-039f8ed9e643?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
+      />
+    </figure>
+    <figure>
+      <img
+        class="w-52 h-52 grow object-cover skew-x-6 skew-y-2"
+        src="https://image.cdn2.seaart.ai/2023-08-23/15120975837305861/1e1e5a965c3f3be23a17bf05e46881d30907db85_high.webp"
+      />
+    </figure>
+
+    <a href="#img" class="p-8 block bg-red-300 w-max">Apúntame</a>
+    <a href="#" class="p-8 block bg-blue-300 w-max">Dejar de apuntar</a>
+
+    <figure>
+      <img
+        id="img"
+        class="w-52 h-52 grow object-cover hover:scale-150 target:scale-150"
+        src="https://images.unsplash.com/photo-1596187561426-20d165472a72?q=80&w=1336&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      />
+    </figure>
+
+    <section class="p-8 bg-red-400 group/section">
+      <figure
+        class="w-64 h-64 relative top-40 left-20 group/figure overflow-hidden"
+      >
+        <p
+          class="absolute inset-0 text-white bg-red-600/50 flex items-center justify-center font-bold text-3xl z-10 group-hover/figure:translate-y-full group-hover/section:bg-blue-600/50 transition"
+        >
+          Mario Bros
+        </p>
+        <img
+          class="w-full h-full object-cover relative"
+          src="https://www5.minijuegosgratis.com/v3/games/thumbnails/222662_7_sq.jpg"
+        />
+      </figure>
+    </section>
+
+    <section class="space-y-4 mt-10 mx-auto w-max">
+      <button class="bg-red-400 text-white w-max p-4 peer/abajo">
+        Desplaza hacia abajo
+      </button>
+      <button class="bg-red-400 text-white w-max p-4 peer/derecha">
+        Desplaza hacia la derecha
+      </button>
+      <img
+        class="w-32 h-32 object-cover relative peer-hover/abajo:translate-y-full peer-hover/derecha:translate-x-full transition duration-1000 ease-out delay-500"
+        src="https://www5.minijuegosgratis.com/v3/games/thumbnails/222662_7_sq.jpg"
+      />
+    </section>
+
+    <!--  <form class="focus-within:bg-red-600">
+      <input
+        class="border border-black mx-auto mt-10 p-8 focus:outline-green-400 focus:bg-slate-300 placeholder-shown:bg-red-300"
+        type="text"
+        placeholder="Ingresa tu nombre"
+      />
+
+      <input type="checkbox" class="w-24 h-24 checked:w-56 checked:h-56" />
+    </form> -->
+  </body>
+</html>
