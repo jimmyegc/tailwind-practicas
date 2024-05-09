@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+}
+
+@layer components {
+  .boton {
+    background-color: seagreen;
+    padding: 1rem 2rem;
+    text-align: center;
+    display: inline-block;
+    color: white;
+  }
+
+  .boton-rojo {
+    background-color: red;
+  }
+
+  .boton-verde {
+    @apply bg-green-600 inline-block py-4 px-8 text-white rounded-3xl hover:bg-green-800;
+  }
+
+  .wrapper {
+    @apply w-[90%] mx-auto max-w-screen-xl overflow-hidden bg-slate-800;
+  }
+}
+
+@layer utilities {
+  .bg-image-center {
+    @apply bg-cover bg-center;
+  }
+}
